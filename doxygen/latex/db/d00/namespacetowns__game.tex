@@ -1,0 +1,197 @@
+\doxysection{Пространство имен towns\+\_\+game}
+\hypertarget{namespacetowns__game}{}\label{namespacetowns__game}\index{towns\_game@{towns\_game}}
+
+
+Библиотека для игры в города  
+
+
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtowns__game_1_1no__more__towns}{no\+\_\+more\+\_\+towns}}
+\begin{DoxyCompactList}\small\item\em Исключение, означающее невозможность назвать город на нужную букву, ранее не встреченный в списке \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f}{load\+\_\+towns}} (const std\+::string \&all\+\_\+files\+\_\+txt)
+\begin{DoxyCompactList}\small\item\em Загружает названия городов из текстового файла в \doxylink{namespacetowns__game_ad2061ad5173637f0d5c5c538679789d6}{towns\+\_\+game\+::all\+\_\+towns}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}{play\+\_\+towns}} (std\+::vector$<$ std\+::string $>$ \&logs)
+\begin{DoxyCompactList}\small\item\em Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetowns__game_a081eba4e52abe360d556623a319668dc}{memorise\+\_\+town}} (std\+::vector$<$ std\+::string $>$ \&logs, const std\+::string \&town)
+\begin{DoxyCompactList}\small\item\em Добавляет копию названия города в logs, переводя слово в верхний регистр и заменяя все символы, не являющиеся буквами, на пробелы \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9}{user\+\_\+move}} (const std\+::string \&town, std\+::vector$<$ std\+::string $>$ \&logs)
+\begin{DoxyCompactList}\small\item\em Ход пользователя в игре в города \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetowns__game_adb7ed9200163c369a67bcd26994c8d9d}{load\+\_\+towns}} (const char \texorpdfstring{$\ast$}{*}all\+\_\+towns\+\_\+txt)
+\begin{DoxyCompactList}\small\item\em Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacetowns__game_a9470c5fe85f6fbbf69e53b3e907594c9}{play\+\_\+towns}} (const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}logs, int size)
+\begin{DoxyCompactList}\small\item\em Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetowns__game_a1abbb065dc83f164d9e0972b1f011185}{memorise\+\_\+town}} (const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&logs, const char \texorpdfstring{$\ast$}{*}town, int \&size)
+\begin{DoxyCompactList}\small\item\em Добавляет копию названия города в logs, переводя слово в верхний регистр и заменяя все символы, не являющиеся буквами, на пробелы \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacetowns__game_a4dc9e964b33fcd61cba3fb7f1d864938}{user\+\_\+move}} (const char \texorpdfstring{$\ast$}{*}town, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&logs, int \&size)
+\begin{DoxyCompactList}\small\item\em Ход пользователя в игре в города \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacetowns__game_ad2061ad5173637f0d5c5c538679789d6}\label{namespacetowns__game_ad2061ad5173637f0d5c5c538679789d6} 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ {\bfseries all\+\_\+towns}
+\begin{DoxyCompactList}\small\item\em unordered\+\_\+set, содержащий все известные программе города \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Библиотека для игры в города 
+
+\doxysubsection{Функции}
+\Hypertarget{namespacetowns__game_adb7ed9200163c369a67bcd26994c8d9d}\index{towns\_game@{towns\_game}!load\_towns@{load\_towns}}
+\index{load\_towns@{load\_towns}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{load\_towns()}{load\_towns()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_adb7ed9200163c369a67bcd26994c8d9d} 
+void towns\+\_\+game\+::load\+\_\+towns (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{all\+\_\+towns\+\_\+txt}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. 
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами. \Hypertarget{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f}\index{towns\_game@{towns\_game}!load\_towns@{load\_towns}}
+\index{load\_towns@{load\_towns}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{load\_towns()}{load\_towns()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f} 
+void towns\+\_\+game\+::load\+\_\+towns (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{all\+\_\+files\+\_\+txt}{}\end{DoxyParamCaption})}
+
+
+
+Загружает названия городов из текстового файла в \doxylink{namespacetowns__game_ad2061ad5173637f0d5c5c538679789d6}{towns\+\_\+game\+::all\+\_\+towns}. 
+
+Формат входного файла\+: все названия, разделенные переходом на следующую строку. Все символы в названиях, не являющиеся буквами, заменяются на пробелы в all\+\_\+towns и, таким образом, равносильны для программы 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em dest} & Название файла с именами городов \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::runtime\+\_\+error} & Если указанный файл не найден \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacetowns__game_a1abbb065dc83f164d9e0972b1f011185}\index{towns\_game@{towns\_game}!memorise\_town@{memorise\_town}}
+\index{memorise\_town@{memorise\_town}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{memorise\_town()}{memorise\_town()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a1abbb065dc83f164d9e0972b1f011185} 
+void towns\+\_\+game\+::memorise\+\_\+town (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&}]{logs}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{town}{, }\item[{int \&}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Добавляет копию названия города в logs, переводя слово в верхний регистр и заменяя все символы, не являющиеся буквами, на пробелы 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in,out}}  & {\em char} & \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&logs Ссылка на вектор с именами ранее названных городов \\
+\hline
+\mbox{\texttt{ in}}  & {\em char} & \texorpdfstring{$\ast$}{*}town Имя города \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em int} & \&size Ссылка на размер вектора logs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacetowns__game_a081eba4e52abe360d556623a319668dc}\index{towns\_game@{towns\_game}!memorise\_town@{memorise\_town}}
+\index{memorise\_town@{memorise\_town}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{memorise\_town()}{memorise\_town()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a081eba4e52abe360d556623a319668dc} 
+void towns\+\_\+game\+::memorise\+\_\+town (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{logs}{, }\item[{const std\+::string \&}]{town}{}\end{DoxyParamCaption})}
+
+
+
+Добавляет копию названия города в logs, переводя слово в верхний регистр и заменяя все символы, не являющиеся буквами, на пробелы 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in,out}}  & {\em std\+::vector$<$std\+::string$>$} & \&logs Вектор с именами ранее названных городов \\
+\hline
+\mbox{\texttt{ in}}  & {\em std\+::string} & \&towns Имя города \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacetowns__game_a9470c5fe85f6fbbf69e53b3e907594c9}\index{towns\_game@{towns\_game}!play\_towns@{play\_towns}}
+\index{play\_towns@{play\_towns}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{play\_towns()}{play\_towns()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a9470c5fe85f6fbbf69e53b3e907594c9} 
+const char \texorpdfstring{$\ast$}{*} towns\+\_\+game\+::play\+\_\+towns (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{logs}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. 
+
+Динамически выделяет память в куче, необходимо использовать std\+::free 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}} & logs Указатель на вектор с именами ранее названных городов, в виде си-\/строк \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & size Размер вектора logs \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtowns__game_1_1no__more__towns}{towns\+\_\+game\+::no\+\_\+more\+\_\+towns}} & Если подходящий город не найден \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}\index{towns\_game@{towns\_game}!play\_towns@{play\_towns}}
+\index{play\_towns@{play\_towns}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{play\_towns()}{play\_towns()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f} 
+std\+::string towns\+\_\+game\+::play\+\_\+towns (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{logs}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em std\+::vector$<$std\+::string$>$} & \&logs Вектор с именами ранее названных городов \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtowns__game_1_1no__more__towns}{towns\+\_\+game\+::no\+\_\+more\+\_\+towns}} & Если подходящий город не найден \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacetowns__game_a4dc9e964b33fcd61cba3fb7f1d864938}\index{towns\_game@{towns\_game}!user\_move@{user\_move}}
+\index{user\_move@{user\_move}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{user\_move()}{user\_move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a4dc9e964b33fcd61cba3fb7f1d864938} 
+const char \texorpdfstring{$\ast$}{*} towns\+\_\+game\+::user\+\_\+move (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{town}{, }\item[{const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&}]{logs}{, }\item[{int \&}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Ход пользователя в игре в города 
+
+Вызывает \doxylink{namespacetowns__game_a081eba4e52abe360d556623a319668dc}{towns\+\_\+game\+::memorise\+\_\+town()}, затем \doxylink{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}{towns\+\_\+game\+::play\+\_\+towns()} Добавляет город в logs, возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. Динамически выделяет память в куче, необходимо использовать std\+::free 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em char} & \texorpdfstring{$\ast$}{*}town Имя города \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em char} & \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\&logs Вектор с именами ранее названных городов \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em int} & \&size Ссылка на размер вектора logs \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtowns__game_1_1no__more__towns}{towns\+\_\+game\+::no\+\_\+more\+\_\+towns}} & Если подходящий город не найден \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9}\index{towns\_game@{towns\_game}!user\_move@{user\_move}}
+\index{user\_move@{user\_move}!towns\_game@{towns\_game}}
+\doxysubsubsection{\texorpdfstring{user\_move()}{user\_move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9} 
+std\+::string towns\+\_\+game\+::user\+\_\+move (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{town}{, }\item[{std\+::vector$<$ std\+::string $>$ \&}]{logs}{}\end{DoxyParamCaption})}
+
+
+
+Ход пользователя в игре в города 
+
+Вызывает \doxylink{namespacetowns__game_a081eba4e52abe360d556623a319668dc}{towns\+\_\+game\+::memorise\+\_\+town()}, затем \doxylink{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}{towns\+\_\+game\+::play\+\_\+towns()} Добавляет город в logs, возвращает название города, содержащееся в all\+\_\+towns и не содержащщеся в logs, начинающееся на последнюю букву последнего элемента logs. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in,out}}  & {\em std\+::vector$<$std\+::string$>$} & \&logs Вектор с именами ранее названных городов \\
+\hline
+\mbox{\texttt{ in}}  & {\em std\+::string} & \&towns Имя города \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtowns__game_1_1no__more__towns}{towns\+\_\+game\+::no\+\_\+more\+\_\+towns}} & Если подходящий город не найден \\
+\hline
+\end{DoxyExceptions}

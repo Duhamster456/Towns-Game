@@ -1,0 +1,46 @@
+\doxysection{towns\+\_\+game.\+hpp}
+\hypertarget{towns__game_8hpp_source}{}\label{towns__game_8hpp_source}\index{include/towns\_game.hpp@{include/towns\_game.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DUHAMSTER\_MEPHI\_OOP\_LAB1\_TOWNSHPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DUHAMSTER\_MEPHI\_OOP\_LAB1\_TOWNSHPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ HOW\_MANY\_TOWNS\ 3}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetowns__game}{towns\_game}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{extern}\ std::unordered\_set<std::string>\ \mbox{\hyperlink{namespacetowns__game_ad2061ad5173637f0d5c5c538679789d6}{all\_towns}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f}{load\_towns}}(\textcolor{keyword}{const}\ std::string\ \&all\_files\_txt);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}{play\_towns}}(std::vector<std::string>\ \&logs);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacetowns__game_a081eba4e52abe360d556623a319668dc}{memorise\_town}}(std::vector<std::string>\ \&logs,\ \textcolor{keyword}{const}\ std::string\ \&town);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ \mbox{\hyperlink{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9}{user\_move}}(\textcolor{keyword}{const}\ std::string\ \&town,\ std::vector<std::string>\ \&logs);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f}{load\_towns}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *all\_towns\_txt);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{namespacetowns__game_a3c1d444b003bab109cd807af16b7365f}{play\_towns}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}**\ logs,\ \textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacetowns__game_a081eba4e52abe360d556623a319668dc}{memorise\_town}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **\&logs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *town,\ \textcolor{keywordtype}{int}\ \&size);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9}{user\_move}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *town,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **\&logs,\ \textcolor{keywordtype}{int}\ \&size);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtowns__game_1_1no__more__towns}{no\_more\_towns}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what\ ()\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Подходящих\ городов\ больше\ не\ осталось"{}};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \};}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,58 @@
+\doxysection{Пространство имен dialogue}
+\hypertarget{namespacedialogue}{}\label{namespacedialogue}\index{dialogue@{dialogue}}
+
+
+Диалоговые функции, вызываемые в main.\+cpp.  
+
+
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacedialogue_a8472e351cf6ffd1ae3771781474b3af8}{load}} ()
+\begin{DoxyCompactList}\small\item\em Загрузка название городов из текстового файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacedialogue_aa3e408a5cbd7a5539ad09d28e3031bbb}{make\+\_\+a\+\_\+move}} ()
+\begin{DoxyCompactList}\small\item\em Ход в игре в города \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacedialogue_ab5de1990354a850f747ee4b42f05d827}{on\+\_\+exit}} ()
+\begin{DoxyCompactList}\small\item\em Выход из программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Диалоговые функции, вызываемые в main.\+cpp. 
+
+\doxysubsection{Функции}
+\Hypertarget{namespacedialogue_a8472e351cf6ffd1ae3771781474b3af8}\index{dialogue@{dialogue}!load@{load}}
+\index{load@{load}!dialogue@{dialogue}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{namespacedialogue_a8472e351cf6ffd1ae3771781474b3af8} 
+void dialogue\+::load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Загрузка название городов из текстового файла 
+
+Предлагает пользователю ввести навзание города и вызывает \doxylink{namespacetowns__game_ac587b7875aee0c944026f970c7da4a4f}{towns\+\_\+game\+::load\+\_\+towns()} 
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::runtime\+\_\+error} & Если указанный файл не найден \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacedialogue_aa3e408a5cbd7a5539ad09d28e3031bbb}\index{dialogue@{dialogue}!make\_a\_move@{make\_a\_move}}
+\index{make\_a\_move@{make\_a\_move}!dialogue@{dialogue}}
+\doxysubsubsection{\texorpdfstring{make\_a\_move()}{make\_a\_move()}}
+{\footnotesize\ttfamily \label{namespacedialogue_aa3e408a5cbd7a5539ad09d28e3031bbb} 
+void dialogue\+::make\+\_\+a\+\_\+move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Ход в игре в города 
+
+Предлагает пользователю сделать ход и вызывает \doxylink{namespacetowns__game_a7918e576f1af0f85e39274d817d452e9}{towns\+\_\+game\+::user\+\_\+move()} В файле с реализацией должен быть контейнер с раннее названными именами городов. Чтобы работа с памятью была корректной, необходимо вызвать \doxylink{namespacedialogue_ab5de1990354a850f747ee4b42f05d827}{on\+\_\+exit()} перед выходом из программы \Hypertarget{namespacedialogue_ab5de1990354a850f747ee4b42f05d827}\index{dialogue@{dialogue}!on\_exit@{on\_exit}}
+\index{on\_exit@{on\_exit}!dialogue@{dialogue}}
+\doxysubsubsection{\texorpdfstring{on\_exit()}{on\_exit()}}
+{\footnotesize\ttfamily \label{namespacedialogue_ab5de1990354a850f747ee4b42f05d827} 
+void dialogue\+::on\+\_\+exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Выход из программы 
+
+Обязательно вызвать на выходе из программы. Предотвращает утечки 
